@@ -1,3 +1,8 @@
+//Google maps and Apple maps 
+
+
+
+//Slide show functionality 
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -15,3 +20,5 @@ function showDivs(n){
     }
     x[slideIndex-1].style.display="block";
 }
+
+//
