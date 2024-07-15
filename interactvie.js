@@ -1,7 +1,12 @@
-//Google maps and Apple maps 
-
-
-
+function openNav() {
+    document.getElementById(" ").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
 //Slide show functionality 
 var slideIndex = 1;
 showDivs(slideIndex);
