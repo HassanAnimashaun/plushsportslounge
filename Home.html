@@ -4,107 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
     <link rel="stylesheet" href="/Style/mobile.css" media="screen and (max-width: 768px)">
-    <link rel="stylesheet" href="/Style/desktop.css" media="screen and (min-width: 769px)">
-    <script src="interactvie.js" defer></script>
 
     <title>Plush Sports Lounge</title>
 </head>
 <body>
-   
-    <header>    
-        <!-- create an event listener for maps -->
-        <div class="location-container">
-            <a href="https://www.google.com/maps/dir//Plush+Sports+Bar+%2526+Lounge,+108+NC-210,+Spring+Lake,+NC+28390/@35.1687479,-78.9747321" target="_blank">
-                <i class="material-symbols-outlined" id="pin">location_on</i>
-                <p id="loc">108 NC-210, Spring Lake, NC 28390</p>
-            </a>
-        </div>
+    <div class="navbar">
 
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">x</a>
-            <a href ="#about">About</a>
-            <a href ="#events">Events</a>
-            <a href ="#menu">Menu</a>
-        </div>
-                
-        </div id="main">
-            <span class="material-symbols-outlined" id="openbtn" onclick="openNav()">menu</span>
-        </div>   
-        <div class="title"> 
-            <div class="title-animation">
-                <h1>Plush Sports Lounge</h1>
-            </div>
-        </div>      
-    </header>
-    <hr>
-    <main>
-        <div class="slideshow-container">
-            <div class="slideshow-pictures">
-                <video controls>
-                    <source src="/Samples/samplevideo1.mp4"  type="video/mp4">
-                </video>
-            </div>
-            <div class="slideshow-pictures">
-                <img src="/Samples/sample1.jpg">
-            </div>
-            <div class="slideshow-pictures" >
-                <img src="/Samples/sample2.jpg">
-            </div>
-            <div class="slideshow-pictures" >
-                <img src="/Samples/sample3.jpg">
-            </div>
-            <div class="slideshow-pictures">
-                <img src="/Samples/sample4.jpg">
-            </div>
-            <a class="back" onclick="plusDivs(-1)">❮</a>
-            <a class="next" onclick="plusDivs(1)">❯</a>
-        </div>
-        <hr>
-        <div class="title">
-            <h1 id="about">About</h1>
-            <img src="/Samples/logo.jpeg">
-            <article>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</article>
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-203e64cb-0c10-4558-a40d-6a74a8da5409" data-elfsight-app-lazy></div>
-        </div>
-        <hr>
-        <div class="title">
-            <h1 id="events">Events</h1>
-            <!-- implementation might change -->
-            <!-- <div class="event-showing">
-                <img src="Samples/sample1.jpg">
-                <img src="Samples/sample2.jpg">
-                <img src="Samples/sample3.jpg">
-            </div> -->
-        </div>
-        <hr>
-        <div class="title">
-            <h1 id="menu">Menu</h1>
-        </div>
-    </main>
-   
-    <footer>
-        &copy; 2024. All Rights Reserved. | Site By Hassan Animashaun
-        <div class="socials">
-            <a href="https://www.facebook.com/profile.php?id=61557136441726" target="_blank">
-                <img src="/Samples/Facebook.svg">
-            </a>
-            <a href="https://www.instagram.com/plushloungenc/" target="_blank">
-                <img src="/Samples/Instagram.svg">
-            </a>
-        </div>
-        <div class="contact-us"> 
-            <a href="tel:+1(910) 339-3544">
-                <i class="material-symbols-outlined">phone</i>
-            <a href="mailto:hassananimashaun@outlook.com">
-                <i class="material-symbols-outlined">mail</i>
-            </a>
-        </div>
+        <div class="nav-container">
+            <span id="open-btn" class="material-symbols-outlined" >menu</span>
 
-    </footer>
+            <nav>
+                <span id="close-btn" class="material-symbols-outlined">close</span>
+
+                <ul class="sidebar" id="sidebar-cta">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
     
+        <div class="titile">
+            <h1>Plush Sports <span>Lounge</span></h1>
+        </div>
+
+        <div class="location">
+            <a href="https://www.google.com/maps/dir//Plush+Sports+Bar+%2526+Lounge,+108+NC-210,+Spring+Lake,+NC+28390/@35.1687479,-78.9747321" target="_blank" >
+                <i class="material-symbols-outlined" id="pin">location_on</i>
+                <p id="address">108 NC-210, Spring Lake, NC 28390</p>
+            </a>
+        </div> 
+    </div>
+
+    <script src="interactive.js"></script>
 </body>
 </html>
