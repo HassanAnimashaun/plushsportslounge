@@ -4,8 +4,8 @@ const sidebar = document.getElementById("sidebar-cta");
 const pictures = document.querySelectorAll('.pictures');
 const nextButton = document.querySelector('.next-btn');
 const previousButton = document.querySelector('.prev-btn');
-
 nav = document.querySelector('nav');
+const video = document.querySelector("#video");
 
 
 //Navigation Menu Functionality
@@ -39,3 +39,13 @@ nextButton.addEventListener('click', () =>{
 previousButton.addEventListener('click', () =>{
   showSlides(--slideIndex)
 });
+
+
+// When the video ends the first time auto next 
+// after going through all pictures 
+// coming back to the video we auto reload just
+// the video to play automatically and continue
+
+video.addEventListener("ended", () =>{
+  showSlides(++slideIndex)
+})
