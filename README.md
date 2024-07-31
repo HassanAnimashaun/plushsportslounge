@@ -1,8 +1,8 @@
 <style>
   .title{
-    font-family:cursive;
-    color:purple;
+    font-family:"cursive";
+    color:"purple";
   }
 </style>
 
-<h1>Plush Sports <span id=title>Lounge</span></h1>
+<h1>Plush Sports <span color:>Lounge</span></h1>
