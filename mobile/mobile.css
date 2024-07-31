@@ -99,4 +99,49 @@ nav #close-btn:hover {
 }
 .location #pin:hover {
   color: var(--primary-color);
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+.slideshow-container .pictures {
+  display: none;
+  width: 100%;
+}
+
+.pictures img, .pictures video {
+  width: 100%;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.next-btn {
+  right: 0;
 }/*# sourceMappingURL=mobile.css.map */
