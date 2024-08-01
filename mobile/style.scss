@@ -155,5 +155,32 @@ nav {
 
 .next-btn{
   right: 0;
+}
+
+.about{
+  display: block;
+}
+.about-container{
+  border: red solid 3px;
+  max-width: 100%;
+}
+
+.about-paragraph img{
+  width: auto;
+  height: 200px; 
+  object-fit: contain;
+  margin-left: 25%;
+}
+.about-paragraph p{
+  text-align:center;
+  margin: auto;
 
 }
+.review-container{
+  border: black solid 2px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+
