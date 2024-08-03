@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --primary-color: #4e0a8b;
@@ -11,6 +11,13 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .navbar {
@@ -29,15 +36,15 @@ body {
 
   #open-btn {
     cursor: pointer;
-        &:hover {
-            color: var(--primary-color);
-        }
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 
   h1 {
     text-align: center;
-    span{
-      font-family: 'Great Vibes', cursive;
+    span {
+      font-family: "Great Vibes", cursive;
       font-size: 40px;
       color: var(--primary-color);
       padding-right: 17px;
@@ -94,51 +101,51 @@ nav {
     padding: 10px;
     cursor: pointer;
 
-    &:hover{
-        color: var(--primary-color);
+    &:hover {
+      color: var(--primary-color);
     }
   }
 }
 
-.location{
-  
+.location {
   #address {
     display: none;
   }
-  
+
   #pin {
     cursor: pointer;
     color: white;
-      &:hover{
-        color: var(--primary-color);
+    &:hover {
+      color: var(--primary-color);
     }
   }
 }
 
-.hero{
+.hero {
   width: 100%;
   overflow: hidden;
 }
 
-.slideshow-container{
+.slideshow-container {
   position: relative;
   max-width: 100%;
-  margin:auto;
+  margin: auto;
 
-  .pictures{
+  .pictures {
     display: none;
     width: 100%;
   }
 }
-.pictures img, .pictures video {
+.pictures img,
+.pictures video {
   width: 100%;
   height: 300px;
   display: block;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .prev-btn,
-.next-btn{
+.next-btn {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -153,34 +160,28 @@ nav {
   user-select: none;
 }
 
-.next-btn{
+.next-btn {
   right: 0;
 }
 
-.about{
-  display: block;
+.about {
+  background: grey;
 }
-.about-container{
-  border: red solid 3px;
+
+.about-container {
   max-width: 100%;
-}
-
-.about-paragraph img{
-  width: auto;
-  height: 200px; 
-  object-fit: contain;
-  margin-left: 25%;
-}
-.about-paragraph p{
-  text-align:center;
-  margin: auto;
-
+  .about-paragraph img {
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 25%;
+    padding: 15px 0;
+  }
+  .about-paragraph p {
+    text-align: center;
+    margin: auto;
+  }
 }
 .review-container{
-  border: black solid 2px;
-  display: none;
-  position: absolute;
-  bottom: 0;
+  padding-top: 50px;
 }
-
-
