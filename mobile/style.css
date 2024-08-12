@@ -176,4 +176,10 @@ nav #close-btn:hover {
 
 .review-container {
   padding-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
 }/*# sourceMappingURL=style.css.map */
