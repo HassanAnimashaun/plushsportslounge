@@ -22,7 +22,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-right: 39%;
   background: black;
   color: white;
 }
@@ -41,7 +40,7 @@ h2 {
   color: var(--primary-color);
   transform: scale(1.1);
 }
-.navbar h1 span {
+.navbar .title span {
   font-family: "Great Vibes", cursive;
   font-size: 40px;
   color: var(--primary-color);
@@ -79,14 +78,14 @@ h2 {
 .next-btn {
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 40%;
   width: auto;
   height: 90%;
   padding: 16px;
-  color: red;
+  color: white;
   font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
+  font-size: 40px;
+  transition: 0.9s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -104,32 +103,67 @@ h2 {
 .about-container {
   max-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: center;
-}
-
-.profile-and-text {
-  display: flex;
-  gap: 20px;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.profile-pic img {
-  height: 200px;
-  width: auto;
 }
 
 .about-paragraph {
-  text-align: left; /* Align text to the left */
-  max-width: 500px; /* Set a maximum width for the paragraph */
+  display: flex;
+  gap: 20px;
+  width: 100%;
 }
 
-.review-container {
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding-right: 20px;
+  background: black;
+}
+.profile-pic p {
+  font-size: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  color: white;
+}
+
+.about-paragraph {
+  text-align: left;
+  max-width: 500px;
+}
+.about-paragraph .review-container {
   width: 100%;
   padding-top: 20px;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black solid 2px;
+  width: 300px;
+  height: 400px;
+  scroll-snap-align: center;
+  margin: 0 5px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -182,5 +216,13 @@ h2 {
   }
   .about-container {
     display: block;
+    padding: 30px;
+  }
+  .profile-pic {
+    margin: 0 auto;
+  }
+  .event {
+    width: 200px;
+    height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
