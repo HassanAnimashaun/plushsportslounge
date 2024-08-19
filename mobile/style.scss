@@ -50,8 +50,6 @@ h2 {
   }
 }
 
-
-
 .material-symbols-outlined {
   display: none;
 }
@@ -105,20 +103,13 @@ h2 {
 }
 
 .about-container {
-  max-width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+  gap: 40px
 }
 
-.about-paragraph {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-}
 
 .profile-pic {
   display: flex;
@@ -128,7 +119,6 @@ h2 {
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  padding-right: 20px;
   background: black;
 
   p {
@@ -142,11 +132,11 @@ h2 {
 .about-paragraph {
   text-align: left;
   max-width: 500px;
+}
 
-  .review-container {
-    width: 100%;
-    padding-top: 20px;
-  }
+.review-container {
+  width: 100%;
+  padding-top: 20px;
 }
 
 .event-container {
@@ -155,7 +145,7 @@ h2 {
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 10px;
-  padding:  30px;
+  padding: 30px;
   overflow: auto;
   white-space: nowrap;
   scroll-snap-type: x mandatory;
